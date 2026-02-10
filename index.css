@@ -1,0 +1,717 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 59px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 39px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #fd9322;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+h3{
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 32px;
+    font-weight: bold;
+}
+h4{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 27px;
+    font-weight: bold;
+}
+body{
+    background-color: #FBFBFB;
+}
+.yote{
+    background: linear-gradient(to right, #141414 40%, #FBFBFB 30%);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(to right, #141414 40%, #FBFBFB 30%);
+    height: auto;
+}
+.navbar h1{
+    font-size: 20px;
+    color: red;
+    margin-left: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.nav{
+    margin-left: 20%;
+}
+.nav li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #141414;
+    transition: 0.3s ease;
+}
+.nav li a:hover {
+    color: rgb(58, 56, 56);
+    font-size: 21px;
+}
+.sign button{
+    background-color: #FE8400;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s ease;
+    margin-left: -40%;
+}
+.sign a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #141414;
+}
+.sign button:hover{
+    background-color: #fd9322;
+}
+.homePage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.textContent{
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 0;
+    backdrop-filter: blur(20px);
+    margin-left: 150px;
+    height: 500px;
+    flex: 1 1 400px;
+    min-width: 300px;
+    margin: 0 20px 20px 20px;
+}
+.imageContent img{
+    width: 1200px;
+    height: 750px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.textContent button{
+    background-color: #fd9322;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    transition: 0.3s ease;
+}
+.textContent button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #141414;
+    font-weight: 600;
+}
+.textContent button:hover{
+    background-color: #FE8400;
+}
+.textContent p {
+    font-size: 20px;
+}
+.about h2{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #fd9322;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+.about{
+    margin-top: 50px;
+}
+.aboutUs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    margin-top: 40px;
+}
+.imageAbout img{
+    width: 800px;
+    height: auto;
+    margin-left: 150px;
+}
+.textAbout{
+    margin-right: 170px;
+    margin-top: -100px;
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: 1.7;
+}
+.bookNow{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 0;
+    margin-top: 50px;
+    background-color: #FFE4C6;
+}
+.booking{
+    margin-top: 40px;
+}
+.formBook{
+    flex: 0 0 calc(33.333% - 1rem);
+}
+.formBook:nth-child(n+4){
+    flex: 0 0 calc(25% - 1rem);
+}
+.formBook select{
+    background-color: #C4C4C4;
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.formBook select option{
+    border: none;
+    background: #FE8400;
+}
+.formBook button{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border: none;
+    padding: 10px;
+    background: #FE8400;
+}
+.formBook button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #141414;
+    font-weight: 600;
+}
+.featuredCars{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin-bottom: 50px;
+}
+.feautered{
+    margin-top: 50px;
+}
+.theCars{
+    width: 250px;
+    background: #FFFFFF;
+    border: 1px solid grey;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+.theCars:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.theCars img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.theCars h3{
+    margin: 12px 0 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 14px;
+}
+.icons div{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.icons p{
+    font-weight: 600;
+    font-size: 15px;
+}
+.rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shillings .ksh{
+    font-size: 30px;
+    font-weight: 600;
+}
+.bookButton button{
+    background: #FE8400;
+    border: none;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+.bookButton button:hover{
+    background: #fd9322;
+}
+.bookButton button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #141414;
+    font-weight: 600;
+}
+.premservices{
+    margin: 80px;
+}
+.services{
+    margin-right: 40px;
+    margin-left: 40px;
+    background: linear-gradient(to bottom,#141414 0%, #141414 60%, #FFFFFF 50%, #FFFFFF 100%);
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.premservices .motors{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+.premservices h2{
+    color: #FFFFFF;
+    padding-bottom: 30px;
+}
+.serv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 300px;
+    padding-left: 300px;
+}
+.sevbuttons{
+    width: 250px;
+    height: 250px;
+    background-color: #FFFFFF;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    padding-top: 100px;
+    text-align: center;
+    margin-left: 100px;
+}
+.sevbuttons p{
+    margin-top: 10px;
+}
+.clientsaying{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.clientsay{
+    padding-top: 50px;
+}
+.clientComment img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.clientComment{
+    border: 1px solid grey;
+    width: 330px;
+    height: 330px;
+    text-align: center;
+    padding-top: 50px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    margin-top: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.clientComment h3{
+    padding: 20px;
+}
+.clientComment p{
+    color: #575757;
+}
+.fubutton button{
+    border: none;
+    background-color: transparent;
+}
+.fubutton button a{
+    font-size: 80px;
+    text-decoration: none;
+    color: #fd9322;
+}
+.reviews{
+    background-color: #FFE4C6;
+    width: 100%;
+    height: 200px;
+    margin-top: 80px;
+}
+.reviewNo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+.reviewcontent{
+    text-align: center;
+    padding-top: 50px;
+}
+.reviewcontent p{
+    color: #575757;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.reviewcontent .no{
+    color: #141414;
+    font-size: 50px;
+    font-weight: 800;
+}
+.theformsimage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 650px;
+    margin: 40px auto;
+    border: 1px solid #C4C4C4;
+    background-color: #FFFFFF;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+input{
+    padding-right: 60px;
+    padding-bottom: 25px;
+    background-color: #FBFBFB;
+    border: 1px solid #C4C4C4;
+
+}
+textarea{
+    padding-right: 60px;
+    padding-bottom: 25px;
+    background-color: #FBFBFB;
+    border: 1px solid #C4C4C4;
+
+}
+.formimage img{
+    width: 350px;
+    height: 300px;
+}
+.fillform{
+    margin-top: 50px;
+    background: linear-gradient(to bottom, #FBFBFB 0%, #FBFBFB 40%, #141414 30%, #141414 100%);
+}
+.forms .formimage{
+    flex: 1;
+    padding: 15px;
+}
+.forms button{
+    background: #FE8400;
+    border: none;
+    padding: 10px;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+.forms button:hover{
+    background: #fd9322;
+}
+.forms button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #141414;
+    font-weight: 600;
+}
+.filling{
+    margin-bottom: 0;
+}
+.filling p{
+    color: #FFFFFF;
+    text-align: center;
+    margin: 5px;
+}
+.logo p{
+    color: red;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.filling p span{
+    color: #FE8400;
+}
+/* Navigation for mobile devices */
+/*
+@media screen and (max-width: 1150px){
+  .navbar{
+    position: fixed;
+    top: 0;
+    right: -90%;
+    background-color: var(--black-color);
+    width: 90%;
+    height: 100%;
+    padding: 7.5rem 3.5rem 0;
+    border-left: 2px solid var(--black-border);
+    transition: right .4s;
+  }
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.nav-link{
+  color: var(--text-color-light);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.nav-link:hover{
+  color: var(--first-color);
+}
+
+.nav-close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}*?
+/* Show menu */
+/*.show-menu{
+  right: 0;
+}*/
+
+/* Change background header */
+/*.scroll-header{
+  background-color: var(--body-color);
+  box-shadow: 0 4px 16px hsla(255, 90%, 8%, .1);
+}
+
+.scroll-header .nav-logo span,
+.scroll-header .nav-toggle{
+  color: var(--title-color);
+}*/
+
+/* Active link */
+/*.active-link{
+  color: var(--first-color);
+}
+*/
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    .homePage {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textContent {
+        margin-left: 0;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .imageContent img {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-left: 0;
+    }
+
+    .featuredCars {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .bookNow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formBook select,
+    .formBook button {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .sevbuttons {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .clientsaying {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .reviewNo {
+        padding-left: 50px;
+        padding-right: 50px;
+        flex-wrap: wrap;
+    }
+
+    .theformsimage {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .formimage img {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .nav li a {
+        font-size: 16px;
+    }
+
+    .textContent button a,
+    .bookButton button a,
+    .forms button a {
+        font-size: 16px;
+    }
+
+    .featuredCars {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .theCars {
+        margin-left: 0;
+        margin-top: 40px;
+        width: 90%;
+    }
+
+    .bookNow {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .formBook select,
+    .formBook button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sevbuttons {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .navbar h1 {
+        font-size: 16px;
+    }
+
+    .nav li a {
+        font-size: 14px;
+    }
+
+    .textContent p {
+        font-size: 16px;
+    }
+
+    .textContent button a,
+    .bookButton button a,
+    .forms button a {
+        font-size: 14px;
+    }
+
+    .imageContent img {
+        width: 100%;
+    }
+
+    .sevbuttons {
+        padding-top: 20px;
+    }
+
+    .theformsimage {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 28px; }
+    .textContent, .textAbout { font-size: 18px; }
+}
+
+/* Phones */
+@media screen and (max-width: 768px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; }
+    .homePage, .aboutUs { flex-direction: column; text-align: center; }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    h1 { font-size: 22px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 16px; }
+    .textContent, .textAbout { font-size: 16px; }
+    .bookNow { gap: 10px; }
+}
