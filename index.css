@@ -77,6 +77,62 @@ body{
     color: rgb(58, 56, 56);
     font-size: 21px;
 }
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 28px;
+    color: red;
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+    .navsign{
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        width: 100%;
+        background: rgba(255, 254, 254);
+        display: none;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    }
+    .nav {
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        width: 100%;
+        background: rgba(255, 254, 254);
+        display: none;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    }
+    .nav ul{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .nav ul li{
+        width: 100%;
+        border-bottom: 1px solid #575757;
+    }
+    .nav ul li a{
+        display: block;
+        padding: 15px;
+        color: #1F2937;
+    }
+    .nav ul li a:hover{
+        background: #f4f4f4;
+        color: #0F766E;
+        transition: 0.3s ease;
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+    #menu-toggle:checked ~ .nav{
+        display: block;
+    }
+}
 .sign button{
     background-color: #FE8400;
     border-radius: 20px;
@@ -463,255 +519,4 @@ textarea{
     color: #FE8400;
 }
 /* Navigation for mobile devices */
-/*
-@media screen and (max-width: 1150px){
-  .navbar{
-    position: fixed;
-    top: 0;
-    right: -90%;
-    background-color: var(--black-color);
-    width: 90%;
-    height: 100%;
-    padding: 7.5rem 3.5rem 0;
-    border-left: 2px solid var(--black-border);
-    transition: right .4s;
-  }
-}
 
-.nav-list{
-  display: flex;
-  flex-direction: column;
-  row-gap: 4rem;
-}
-
-.nav-link{
-  color: var(--text-color-light);
-  font-weight: var(--font-semi-bold);
-  transition: color .4s;
-}
-
-.nav-link:hover{
-  color: var(--first-color);
-}
-
-.nav-close{
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-}*?
-/* Show menu */
-/*.show-menu{
-  right: 0;
-}*/
-
-/* Change background header */
-/*.scroll-header{
-  background-color: var(--body-color);
-  box-shadow: 0 4px 16px hsla(255, 90%, 8%, .1);
-}
-
-.scroll-header .nav-logo span,
-.scroll-header .nav-toggle{
-  color: var(--title-color);
-}*/
-
-/* Active link */
-/*.active-link{
-  color: var(--first-color);
-}
-*/
-
-/* Tablets */
-@media screen and (max-width: 1024px) {
-    .homePage {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .textContent {
-        margin-left: 0;
-        margin-top: 30px;
-        height: auto;
-    }
-
-    .imageContent img {
-        width: 90%;
-        height: auto;
-        margin: 20px auto;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav {
-        margin-left: 0;
-    }
-
-    .featuredCars {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        justify-items: center;
-    }
-
-    .bookNow {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .formBook select,
-    .formBook button {
-        margin-left: 0;
-        width: 80%;
-    }
-
-    .sevbuttons {
-        margin-left: 0;
-        margin-bottom: 20px;
-    }
-
-    .clientsaying {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .reviewNo {
-        padding-left: 50px;
-        padding-right: 50px;
-        flex-wrap: wrap;
-    }
-
-    .theformsimage {
-        flex-direction: column;
-        max-width: 90%;
-    }
-
-    .formimage img {
-        width: 80%;
-        height: auto;
-        margin: 20px auto;
-    }
-}
-
-/* Phones */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 32px;
-        line-height: 40px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    .navbar h1 {
-        font-size: 18px;
-    }
-
-    .nav li a {
-        font-size: 16px;
-    }
-
-    .textContent button a,
-    .bookButton button a,
-    .forms button a {
-        font-size: 16px;
-    }
-
-    .featuredCars {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .theCars {
-        margin-left: 0;
-        margin-top: 40px;
-        width: 90%;
-    }
-
-    .bookNow {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .formBook select,
-    .formBook button {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .sevbuttons {
-        width: 100%;
-        height: auto;
-        padding: 30px 20px;
-    }
-}
-
-/* Small phones */
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .navbar h1 {
-        font-size: 16px;
-    }
-
-    .nav li a {
-        font-size: 14px;
-    }
-
-    .textContent p {
-        font-size: 16px;
-    }
-
-    .textContent button a,
-    .bookButton button a,
-    .forms button a {
-        font-size: 14px;
-    }
-
-    .imageContent img {
-        width: 100%;
-    }
-
-    .sevbuttons {
-        padding-top: 20px;
-    }
-
-    .theformsimage {
-        padding: 10px;
-    }
-}
-@media screen and (max-width: 1024px) {
-    h1 { font-size: 36px; }
-    h2 { font-size: 28px; }
-    .textContent, .textAbout { font-size: 18px; }
-}
-
-/* Phones */
-@media screen and (max-width: 768px) {
-    h1 { font-size: 28px; }
-    h2 { font-size: 22px; }
-    h3 { font-size: 18px; }
-    .homePage, .aboutUs { flex-direction: column; text-align: center; }
-}
-
-/* Small phones */
-@media screen and (max-width: 480px) {
-    h1 { font-size: 22px; }
-    h2 { font-size: 20px; }
-    h3 { font-size: 16px; }
-    .textContent, .textAbout { font-size: 16px; }
-    .bookNow { gap: 10px; }
-}
