@@ -34,9 +34,9 @@ h4{
 body{
     background-color: #FBFBFB;
 }
-.yote{
+/*.yote{
     background: linear-gradient(to right, #141414 40%, #FBFBFB 30%);
-}
+}*/
 
 .header{
     position: fixed;
@@ -45,21 +45,20 @@ body{
     width: 100%;
     z-index: 1000;
     background: linear-gradient(to right, #141414 40%, #FBFBFB 30%);
-    height: auto;
 }
 .navbar h1{
     font-size: 20px;
     color: red;
     margin-left: 50px;
 }
-.navbar{
+.navbar, .navsign{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
 }
 .nav{
-    margin-left: 20%;
+    margin-left: 20px;
 }
 .nav li{
     list-style: none;
@@ -77,7 +76,7 @@ body{
     color: rgb(58, 56, 56);
     font-size: 21px;
 }
-#menu-toggle{
+/*#menu-toggle{
     display: none;
 }
 .menu-icon{
@@ -85,8 +84,11 @@ body{
     font-size: 28px;
     color: red;
     cursor: pointer;
-}
-@media (max-width: 768px){
+}*/
+/*@media (max-width: 768px){
+    body{
+        background-color: #141414;
+    }
     .menu-icon{
         display: block;
     }
@@ -132,13 +134,13 @@ body{
     #menu-toggle:checked ~ .nav{
         display: block;
     }
-}
+}*/
 .sign button{
     background-color: #FE8400;
     border-radius: 20px;
     padding: 20px;
     transition: 0.3s ease;
-    margin-left: -40%;
+    margin-right: -40%;
 }
 .sign a{
     text-decoration: none;
@@ -154,6 +156,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background: linear-gradient(to right, #141414 40%, #FBFBFB 30%);
 }
 .textContent{
     color: #FFFFFF;
